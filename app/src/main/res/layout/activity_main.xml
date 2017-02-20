@@ -49,30 +49,10 @@
         app:layout_anchorGravity="bottom|right"/>
 
 	<!-- Your Scrollable View : Can be Nested Scroll View or Recycler View-->
-	<android.support.v4.widget.NestedScrollView
-		android:id="@+id/nestedScrollView"
+	<android.support.v7.widget.RecyclerView
+		android:id="@+id/recycler_view"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		app:layout_behavior="@string/appbar_scrolling_view_behavior">
-
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			android:orientation="vertical"
-			android:paddingTop="10dp">
-
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-			<include layout="@layout/item_nested_scrollview"/>
-
-		</LinearLayout>
-
-	</android.support.v4.widget.NestedScrollView>
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
 </android.support.design.widget.CoordinatorLayout>
